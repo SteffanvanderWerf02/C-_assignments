@@ -22,7 +22,9 @@ namespace solution2_1
                         throw new ArgumentException("Name cannot be null or empty.");
                     }
                     else
+                    {
                         this.name = value;
+                    }
                 }
                 catch (ArgumentException ex)
                 { 

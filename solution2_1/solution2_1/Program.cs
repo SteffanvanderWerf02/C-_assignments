@@ -11,7 +11,7 @@ namespace solution2_1
         static void Main(string[] args)
         {
             Product product = new Product();
-            product.Name = "Adam";
+            product.Name = "";
             Console.WriteLine(product.Name);
         }
     }
