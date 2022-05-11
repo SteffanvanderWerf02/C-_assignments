@@ -13,17 +13,17 @@ namespace Scenario3_2
             Queue<int> numbers1 = new Queue<int>();
             Queue<int> numbers2 = new Queue<int>();
             
-            numbers1.Enqueue(321);
-            numbers1.Enqueue(32);
-            numbers1.Enqueue(43);
-            numbers1.Enqueue(23);
-            numbers1.Enqueue(21);
+            numbers1.Enqueue(8);
+            numbers1.Enqueue(6);
+            numbers1.Enqueue(4);
+            numbers1.Enqueue(2);
+            numbers1.Enqueue(1);
 
-            numbers2.Enqueue(322);
-            numbers2.Enqueue(31);
-            numbers2.Enqueue(20);
-            numbers2.Enqueue(19);
-            numbers2.Enqueue(18);
+            numbers2.Enqueue(9);
+            numbers2.Enqueue(7);
+            numbers2.Enqueue(5);
+            numbers2.Enqueue(3);
+            numbers2.Enqueue(0);
 
             makeInOrder(numbers1, numbers2);
 
@@ -31,33 +31,27 @@ namespace Scenario3_2
 
         static void makeInOrder(Queue<int> first, Queue<int> second)
         {
-            while (first.Count > 0 && second.Count > 0)
-            {
-                Console.WriteLine("First count " + first.Count);
-                Console.WriteLine("Second count " + second.Count);
-
+           while (first.Count >= 0 && second.Count >= 0)
+           {
                 if (first.Count == 0)
                 {
-                    Console.WriteLine(first.Dequeue());
-                    continue;
+                    Console.WriteLine(second.Dequeue());
+                    break;
                 }
-
                 if (second.Count == 0)
                 {
-                    Console.WriteLine(second.Dequeue());
-                    continue;
+                    Console.WriteLine(first.Dequeue());
+                    break;
                 }
 
-                if (first.Peek() >= second.Peek())
+                if (first.Peek() < second.Peek())
                 {
                     Console.WriteLine(first.Dequeue());
-
                 }
                 else
                 {
                     Console.WriteLine(second.Dequeue());
                 }
-
             } 
         }
     }
