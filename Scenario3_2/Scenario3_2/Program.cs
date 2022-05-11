@@ -13,17 +13,17 @@ namespace Scenario3_2
             Queue<int> numbers1 = new Queue<int>();
             Queue<int> numbers2 = new Queue<int>();
             
-            numbers1.Enqueue(8);
-            numbers1.Enqueue(6);
-            numbers1.Enqueue(4);
-            numbers1.Enqueue(2);
             numbers1.Enqueue(1);
+            numbers1.Enqueue(2);
+            numbers1.Enqueue(4);
+            numbers1.Enqueue(6);
+            numbers1.Enqueue(8);
 
-            numbers2.Enqueue(9);
-            numbers2.Enqueue(7);
-            numbers2.Enqueue(5);
-            numbers2.Enqueue(3);
             numbers2.Enqueue(0);
+            numbers2.Enqueue(3);
+            numbers2.Enqueue(5);
+            numbers2.Enqueue(7);
+            numbers2.Enqueue(9);
 
             makeInOrder(numbers1, numbers2);
 
