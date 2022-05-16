@@ -1,0 +1,8 @@
+C:\Users\steff\source\repos\C-_assignments\Scenario3_3\Scenario3_3\obj\Debug\Scenario3_3.csproj.AssemblyReference.cache
+C:\Users\steff\source\repos\C-_assignments\Scenario3_3\Scenario3_3\obj\Debug\Scenario3_3.csproj.SuggestedBindingRedirects.cache
+C:\Users\steff\source\repos\C-_assignments\Scenario3_3\Scenario3_3\obj\Debug\Scenario3_3.csproj.CoreCompileInputs.cache
+C:\Users\steff\source\repos\C-_assignments\Scenario3_3\Scenario3_3\bin\Debug\Scenario3_3.exe.config
+C:\Users\steff\source\repos\C-_assignments\Scenario3_3\Scenario3_3\bin\Debug\Scenario3_3.exe
+C:\Users\steff\source\repos\C-_assignments\Scenario3_3\Scenario3_3\bin\Debug\Scenario3_3.pdb
+C:\Users\steff\source\repos\C-_assignments\Scenario3_3\Scenario3_3\obj\Debug\Scenario3_3.exe
+C:\Users\steff\source\repos\C-_assignments\Scenario3_3\Scenario3_3\obj\Debug\Scenario3_3.pdb
