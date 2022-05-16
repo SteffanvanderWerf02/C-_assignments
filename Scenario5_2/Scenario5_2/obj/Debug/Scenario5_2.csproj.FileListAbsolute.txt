@@ -1,0 +1,11 @@
+C:\Users\steff\source\repos\C-_assignments\Scenario5_2\Scenario5_2\bin\Debug\Scenario5_2.exe.config
+C:\Users\steff\source\repos\C-_assignments\Scenario5_2\Scenario5_2\bin\Debug\Scenario5_2.exe
+C:\Users\steff\source\repos\C-_assignments\Scenario5_2\Scenario5_2\bin\Debug\Scenario5_2.pdb
+C:\Users\steff\source\repos\C-_assignments\Scenario5_2\Scenario5_2\obj\Debug\Scenario5_2.csproj.AssemblyReference.cache
+C:\Users\steff\source\repos\C-_assignments\Scenario5_2\Scenario5_2\obj\Debug\Scenario5_2.csproj.SuggestedBindingRedirects.cache
+C:\Users\steff\source\repos\C-_assignments\Scenario5_2\Scenario5_2\obj\Debug\Scenario5_2.Form1.resources
+C:\Users\steff\source\repos\C-_assignments\Scenario5_2\Scenario5_2\obj\Debug\Scenario5_2.Properties.Resources.resources
+C:\Users\steff\source\repos\C-_assignments\Scenario5_2\Scenario5_2\obj\Debug\Scenario5_2.csproj.GenerateResource.cache
+C:\Users\steff\source\repos\C-_assignments\Scenario5_2\Scenario5_2\obj\Debug\Scenario5_2.csproj.CoreCompileInputs.cache
+C:\Users\steff\source\repos\C-_assignments\Scenario5_2\Scenario5_2\obj\Debug\Scenario5_2.exe
+C:\Users\steff\source\repos\C-_assignments\Scenario5_2\Scenario5_2\obj\Debug\Scenario5_2.pdb
