@@ -42,6 +42,7 @@ In de tabel hier onder ga ik het over de input omschrijven. (de input dat de geb
 | Berekenen van huidige leeftijd | de som van alle ouderbijdragen bij elkaar opgeteld |
 
 
+## Lay-out van de GUI
 
 ## Klassen diagram
 
