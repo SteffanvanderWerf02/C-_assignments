@@ -49,7 +49,7 @@ In de tabel hier onder ga ik het over de input omschrijven. (de input dat de geb
 
 ## Klassen diagram
 
-![Klassen diagram](klassenDiagram.png "Eerste versie van het klassen diagram")
+![Klassen diagram](KlassenDiagram.png "Eerste versie van het klassen diagram")
 
 ## Testplan
 
