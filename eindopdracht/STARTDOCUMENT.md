@@ -44,6 +44,9 @@ In de tabel hier onder ga ik het over de input omschrijven. (de input dat de geb
 
 ## Lay-out van de GUI
 
+![Lay-out van de GUI](GUI.png "Eerste versie van het GUI layout")
+
+
 ## Klassen diagram
 
 ![Klassen diagram](klassenDiagram.png "Eerste versie van het klassen diagram")
