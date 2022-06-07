@@ -94,7 +94,6 @@ Returns de leeftijd van jongste kind van de school
 
 #### #2 getTotalProfit
 
-[omschrijving]
 
 | Step | Input        | Action                 | Expected output |
 | ---- | ------------ | ---------------------- | --------------- |
@@ -103,7 +102,6 @@ Returns de leeftijd van jongste kind van de school
 
 #### #3 getCountChildPerCat
 
-[omschrijving]
 
 | Step | Input        | Action                 | Expected output |
 | ---- | ------------ | ---------------------- | --------------- |
@@ -113,7 +111,6 @@ Returns de leeftijd van jongste kind van de school
 
 #### #4 getAge
 
-[omschrijving]
 
 | Step | Input        | Action                 | Expected output |
 | ---- | ------------ | ---------------------- | --------------- |
@@ -123,12 +120,17 @@ Returns de leeftijd van jongste kind van de school
 
 #### #5 calcContribuation
 
-[omschrijving]
 
 | Step | Input        | Action                 | Expected output |
 | ---- | ------------ | ---------------------- | --------------- |
 | 1    | `child1` | `getYoungestChildAge()` | 65 |
 | 2    | `child2` | `getYoungestChildAge()` | 65 |
 
+##  TestPlan User
 
-
+| Step | Input| Kosten kind|Totale inkomsten| jongste kind|Aantal per categorie|
+| ---- | ------------ | --------| -------- | ------ | ------- |
+| 1    | `01-06-2010` | 65 euro | 65 euro  | 12| 0,0,1|
+| 2    | `25-02-2002` | 65 euro | 130 euro |12| 0,0,2|
+| 3    | `25-02-2022` | 38 euro | 168 euro |0| 1,0,2|
+| 4    | `25-02-2013` | 50 euro | 218 euro |0| 1,1,2|
