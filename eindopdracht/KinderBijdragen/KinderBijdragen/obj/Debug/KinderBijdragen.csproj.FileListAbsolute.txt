@@ -1,0 +1,11 @@
+C:\xampp\htdocs\Opdrachten\NHLStenden\C-_assignments\eindopdracht\KinderBijdragen\KinderBijdragen\bin\Debug\KinderBijdragen.exe.config
+C:\xampp\htdocs\Opdrachten\NHLStenden\C-_assignments\eindopdracht\KinderBijdragen\KinderBijdragen\bin\Debug\KinderBijdragen.exe
+C:\xampp\htdocs\Opdrachten\NHLStenden\C-_assignments\eindopdracht\KinderBijdragen\KinderBijdragen\bin\Debug\KinderBijdragen.pdb
+C:\xampp\htdocs\Opdrachten\NHLStenden\C-_assignments\eindopdracht\KinderBijdragen\KinderBijdragen\obj\Debug\KinderBijdragen.csproj.AssemblyReference.cache
+C:\xampp\htdocs\Opdrachten\NHLStenden\C-_assignments\eindopdracht\KinderBijdragen\KinderBijdragen\obj\Debug\KinderBijdragen.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\Opdrachten\NHLStenden\C-_assignments\eindopdracht\KinderBijdragen\KinderBijdragen\obj\Debug\KinderBijdragen.Form1.resources
+C:\xampp\htdocs\Opdrachten\NHLStenden\C-_assignments\eindopdracht\KinderBijdragen\KinderBijdragen\obj\Debug\KinderBijdragen.Properties.Resources.resources
+C:\xampp\htdocs\Opdrachten\NHLStenden\C-_assignments\eindopdracht\KinderBijdragen\KinderBijdragen\obj\Debug\KinderBijdragen.csproj.GenerateResource.cache
+C:\xampp\htdocs\Opdrachten\NHLStenden\C-_assignments\eindopdracht\KinderBijdragen\KinderBijdragen\obj\Debug\KinderBijdragen.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Opdrachten\NHLStenden\C-_assignments\eindopdracht\KinderBijdragen\KinderBijdragen\obj\Debug\KinderBijdragen.exe
+C:\xampp\htdocs\Opdrachten\NHLStenden\C-_assignments\eindopdracht\KinderBijdragen\KinderBijdragen\obj\Debug\KinderBijdragen.pdb
