@@ -13,35 +13,28 @@ using System.Threading.Tasks;
 
 namespace KinderBijdragen
 {
-        internal class Child
+    internal class Child
+    {
+        // fields
+        public string Name { get; set; }
+        public int Id { get; set; }
+        public DateTime BirthDate { get; set; }
+        public int SchoolId { get; set; }
+        public Child(string name, DateTime birthDate, int schoolId, int id)
         {
-            // fields
-            private string name;
-            private DateTime birthDate;
-            private int schoolId;
-            private int id;
-
-            Child(string name, DateTime birthDate, int schoolId, int id)
-            {
-                this.name = name;
-                this.birthDate = birthDate;
-                this.schoolId = schoolId;
-                this.id = id;
-            }
-            public string Name { get; set; }
-            public int Id { get; set; }
-            public DateTime BirthDate { get; set; }
-            public string SchoolId { get; set; }
-
-            public int GetAge()
-            {
-                var today = DateTime.Today;
-
-                var a = (today.Year * 100 + today.Month) * 100 + today.Day;
-                var b = (this.birthDate.Year * 100 + this.birthDate.Month) * 100 + this.birthDate.Day;
-
-                return (a - b) / 10000;
-            }
-
+            this.Name = name;
+            this.Id = id;
+            this.BirthDate = birthDate;
+            this.SchoolId = schoolId;
         }
+
+        public int GetAge()
+        {
+            DateTime today = DateTime.Today;
+
+            int getNumberToday = (today.Year * 100 + today.Month) * 100 + today.Day;
+            int getNumberBirthDay = (this.BirthDate.Year * 100 + this.BirthDate.Month) * 100 + this.BirthDate.Day;
+            return (getNumberToday - getNumberBirthDay) / 10000;
+        }
+    }
 }

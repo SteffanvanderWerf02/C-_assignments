@@ -16,22 +16,18 @@ namespace KinderBijdragen
     internal class ParentContribution
     {
         // fields
-        private int childId;
-        private Child child;
-
-        ParentContribution(int childId, Child child)
-        {
-            this.childId = childId;
-            this.child = child;
-        }
-
-        public int ChildId { get; set; }
         public Child Child { get; set; }
+        public ParentContribution(Child child)
+        {
+            this.Child = child;
+        }
+                
         public float CalcContribution()
         {
+            if (Child == null) { return 0; }
             float contribution = 0;
 
-            switch (child.GetAge())
+            switch (Child.GetAge())
             {
                 case int age when age > 6 && age < 10:
                     contribution = 38;

@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.SchoolInfoPane = new System.Windows.Forms.TabPage();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -43,57 +45,69 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.ChildernListPane = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.AddChildernPane = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kinderLijstToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.schoolInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.voegKindToeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.SchoolInfoPane.SuspendLayout();
+            this.ChildernListPane.SuspendLayout();
+            this.AddChildernPane.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Controls.Add(this.SchoolInfoPane);
+            this.tabControl1.Controls.Add(this.ChildernListPane);
+            this.tabControl1.Controls.Add(this.AddChildernPane);
+            this.tabControl1.Location = new System.Drawing.Point(0, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(800, 455);
+            this.tabControl1.Size = new System.Drawing.Size(801, 449);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.Pane_Selected);
             // 
-            // tabPage1
+            // SchoolInfoPane
             // 
-            this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 426);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "School";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.SchoolInfoPane.Controls.Add(this.label13);
+            this.SchoolInfoPane.Controls.Add(this.label12);
+            this.SchoolInfoPane.Controls.Add(this.label11);
+            this.SchoolInfoPane.Controls.Add(this.label10);
+            this.SchoolInfoPane.Controls.Add(this.label9);
+            this.SchoolInfoPane.Controls.Add(this.label8);
+            this.SchoolInfoPane.Controls.Add(this.label7);
+            this.SchoolInfoPane.Controls.Add(this.label6);
+            this.SchoolInfoPane.Controls.Add(this.label5);
+            this.SchoolInfoPane.Controls.Add(this.label4);
+            this.SchoolInfoPane.Controls.Add(this.label3);
+            this.SchoolInfoPane.Controls.Add(this.label2);
+            this.SchoolInfoPane.Controls.Add(this.label1);
+            this.SchoolInfoPane.Location = new System.Drawing.Point(4, 25);
+            this.SchoolInfoPane.Name = "SchoolInfoPane";
+            this.SchoolInfoPane.Padding = new System.Windows.Forms.Padding(3);
+            this.SchoolInfoPane.Size = new System.Drawing.Size(793, 420);
+            this.SchoolInfoPane.TabIndex = 0;
+            this.SchoolInfoPane.Text = "School";
+            this.SchoolInfoPane.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
@@ -159,7 +173,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(313, 180);
+            this.label7.Location = new System.Drawing.Point(313, 171);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 25);
             this.label7.TabIndex = 6;
@@ -179,7 +193,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(313, 144);
+            this.label5.Location = new System.Drawing.Point(313, 129);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 25);
             this.label5.TabIndex = 4;
@@ -199,7 +213,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(313, 105);
+            this.label3.Location = new System.Drawing.Point(313, 87);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(145, 25);
             this.label3.TabIndex = 2;
@@ -225,24 +239,44 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "School info";
             // 
-            // tabPage2
+            // ChildernListPane
             // 
-            this.tabPage2.Controls.Add(this.label17);
-            this.tabPage2.Controls.Add(this.label16);
-            this.tabPage2.Controls.Add(this.label15);
-            this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 426);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Kinderen";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.ChildernListPane.Controls.Add(this.label19);
+            this.ChildernListPane.Controls.Add(this.label18);
+            this.ChildernListPane.Controls.Add(this.label17);
+            this.ChildernListPane.Controls.Add(this.label16);
+            this.ChildernListPane.Controls.Add(this.label15);
+            this.ChildernListPane.Controls.Add(this.label14);
+            this.ChildernListPane.Location = new System.Drawing.Point(4, 25);
+            this.ChildernListPane.Name = "ChildernListPane";
+            this.ChildernListPane.Padding = new System.Windows.Forms.Padding(3);
+            this.ChildernListPane.Size = new System.Drawing.Size(793, 420);
+            this.ChildernListPane.TabIndex = 1;
+            this.ChildernListPane.Text = "Kinderen";
+            this.ChildernListPane.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(219, 76);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(51, 16);
+            this.label19.TabIndex = 5;
+            this.label19.Text = "label19";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(109, 76);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(51, 16);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "label18";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(22, 76);
+            this.label17.Location = new System.Drawing.Point(8, 76);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(51, 16);
             this.label17.TabIndex = 3;
@@ -251,7 +285,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(153, 29);
+            this.label16.Location = new System.Drawing.Point(219, 29);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(101, 16);
             this.label16.TabIndex = 2;
@@ -260,7 +294,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(77, 29);
+            this.label15.Location = new System.Drawing.Point(110, 29);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(50, 16);
             this.label15.TabIndex = 1;
@@ -275,34 +309,35 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Naam";
             // 
-            // tabPage3
+            // AddChildernPane
             // 
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.dateTimePicker1);
-            this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Controls.Add(this.label27);
-            this.tabPage3.Controls.Add(this.label29);
-            this.tabPage3.Controls.Add(this.label30);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(792, 426);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Kind toevoegen";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.AddChildernPane.Controls.Add(this.button1);
+            this.AddChildernPane.Controls.Add(this.dateTimePicker1);
+            this.AddChildernPane.Controls.Add(this.textBox1);
+            this.AddChildernPane.Controls.Add(this.label27);
+            this.AddChildernPane.Controls.Add(this.label29);
+            this.AddChildernPane.Controls.Add(this.label30);
+            this.AddChildernPane.Location = new System.Drawing.Point(4, 25);
+            this.AddChildernPane.Name = "AddChildernPane";
+            this.AddChildernPane.Padding = new System.Windows.Forms.Padding(3);
+            this.AddChildernPane.Size = new System.Drawing.Size(793, 420);
+            this.AddChildernPane.TabIndex = 2;
+            this.AddChildernPane.Text = "Kind toevoegen";
+            this.AddChildernPane.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(199, 149);
+            this.button1.Location = new System.Drawing.Point(202, 140);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 23);
             this.button1.TabIndex = 19;
             this.button1.Text = "Toevoegen";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(199, 110);
+            this.dateTimePicker1.Location = new System.Drawing.Point(202, 101);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(389, 22);
             this.dateTimePicker1.TabIndex = 18;
@@ -310,7 +345,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(199, 73);
+            this.textBox1.Location = new System.Drawing.Point(202, 64);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(389, 22);
             this.textBox1.TabIndex = 17;
@@ -319,7 +354,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(8, 107);
+            this.label27.Location = new System.Drawing.Point(11, 98);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(167, 25);
             this.label27.TabIndex = 16;
@@ -329,7 +364,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(10, 70);
+            this.label29.Location = new System.Drawing.Point(13, 61);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(75, 25);
             this.label29.TabIndex = 14;
@@ -345,6 +380,69 @@
             this.label30.TabIndex = 13;
             this.label30.Text = "Kind toevoegen";
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.DoubleClick += new System.EventHandler(this.notifyIcon1_DoubleClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem,
+            this.schoolInfoToolStripMenuItem,
+            this.kinderLijstToolStripMenuItem,
+            this.voegKindToeToolStripMenuItem,
+            this.openToolStripMenuItem,
+            this.closeToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(171, 148);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.openAbout);
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.closeToolStripMenuItem.Text = "Close";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.ExitApp);
+            // 
+            // kinderLijstToolStripMenuItem
+            // 
+            this.kinderLijstToolStripMenuItem.Name = "kinderLijstToolStripMenuItem";
+            this.kinderLijstToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.kinderLijstToolStripMenuItem.Text = "Kinder lijst";
+            this.kinderLijstToolStripMenuItem.Click += new System.EventHandler(this.openChildListPane);
+            // 
+            // schoolInfoToolStripMenuItem
+            // 
+            this.schoolInfoToolStripMenuItem.Name = "schoolInfoToolStripMenuItem";
+            this.schoolInfoToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.schoolInfoToolStripMenuItem.Text = "School info";
+            this.schoolInfoToolStripMenuItem.Click += new System.EventHandler(this.openSchoolPane);
+            // 
+            // voegKindToeToolStripMenuItem
+            // 
+            this.voegKindToeToolStripMenuItem.Name = "voegKindToeToolStripMenuItem";
+            this.voegKindToeToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.voegKindToeToolStripMenuItem.Text = "Voeg kind toe";
+            this.voegKindToeToolStripMenuItem.Click += new System.EventHandler(this.openAddChildPane);
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openSchoolPane);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -352,14 +450,15 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Ouderbijdrage";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            this.SchoolInfoPane.ResumeLayout(false);
+            this.SchoolInfoPane.PerformLayout();
+            this.ChildernListPane.ResumeLayout(false);
+            this.ChildernListPane.PerformLayout();
+            this.AddChildernPane.ResumeLayout(false);
+            this.AddChildernPane.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -367,9 +466,9 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage SchoolInfoPane;
+        private System.Windows.Forms.TabPage ChildernListPane;
+        private System.Windows.Forms.TabPage AddChildernPane;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
@@ -393,6 +492,16 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kinderLijstToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem schoolInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem voegKindToeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
     }
 }
 

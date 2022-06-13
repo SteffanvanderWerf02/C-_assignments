@@ -17,62 +17,63 @@ namespace KinderBijdragen
     internal class School
     {
         // fields
-        private string name;
-        private int id;
-        private List<Child> childeren;
-        private List<ParentContribution> pcs;
-
-        //Constructor
-        School(string name, int id, List<Child> childeren, List<ParentContribution> pc)
-        {
-            this.name = name;
-            this.id = id;
-            this.childeren = childeren;
-            this.pcs = pc;
-        }
         public string Name { get; set; }
         public int Id { get; set; }
         public List<Child> Children { get; set; }
-        public List<ParentContribution> Pc { get; set; }
+        public List<ParentContribution> Pcs { get; set; }
+
+        //Constructor
+        public School(string name, int id)
+        {
+            this.Id = id;
+            this.Name = name;
+            this.Children = new List<Child>();
+            this.Pcs = new List<ParentContribution>();
+        }
+        
         public void AddChild(Child child)
         {
             this.Children.Add(child);
         }
         public void AddPc(ParentContribution pc)
         {
-            this.pcs.Add(pc);
+            this.Pcs.Add(pc);
         }
         public int GetYoungestChild()
         {
+            if (this.Children.Count == 0) { return 0; }
             int age = 0;
             Child curChild = Children.First<Child>();
 
             foreach (Child child in Children)
             {
-                if (curChild.GetAge() <= child.GetAge())
+                if (child.GetAge() <= curChild.GetAge())
                 {
                     age = child.GetAge();
                     curChild = child;
+                    Console.WriteLine(age);
                 }
             }
             return age;
         }
-        public float getTotalProfit() {
+        public float GetTotalProfit() {
+            if (this.Pcs.Count == 0) { return 0; }
             float total = 0;
 
-            foreach (ParentContribution pc in pcs)
+            foreach (ParentContribution pc in Pcs)
             {
                 total += pc.CalcContribution();
             }
 
             return total;
         }
-        public int getCountChildPerCat(int age) {
+        public int GetCountChildPerCat(int minAge, int maxAge) {
+            if (this.Children.Count == 0) { return 0; }
             int counter = 0;
 
             foreach (Child child in Children)
             {
-                if (age < child.GetAge())
+                if (minAge < child.GetAge() && maxAge > child.GetAge())
                 {
                     counter++;
                 }
