@@ -73,7 +73,7 @@ namespace KinderBijdragen
 
             foreach (Child child in Children)
             {
-                if (minAge < child.GetAge() && maxAge > child.GetAge())
+                if (minAge < child.GetAge() && maxAge >= child.GetAge())
                 {
                     counter++;
                 }
