@@ -166,5 +166,98 @@ namespace KinderBijdragen
             showApp();
             tabControl1.SelectedTab = tabControl1.TabPages["AddChildernPane"];
         }
+
+
+
+        //List<Student> studentList = new List<Student>();
+        //public Form1()
+        //{
+        //    InitializeComponent();
+        //    StreamReader dataImport = new StreamReader(@"C:\Users\franc\Desktop\data.csv");
+        //    while (!dataImport.EndOfStream)
+        //    {
+        //        string temp = dataImport.ReadLine();
+        //        String[] tempArray = temp.Split(';');
+        //        Student newStudent = new Student(tempArray[0], tempArray[1], int.Parse(tempArray[2]));
+        //        studentList.Add(newStudent);
+        //    }
+        //}
+
+        //private void nummer_Click(object sender, EventArgs e)
+        //{
+        //    for (int j = 0; j < studentList.Count - 1; j++)
+        //    {
+        //        for (int i = 0; i < studentList.Count - 1; i++)
+        //        {
+        //            Student student1 = studentList[i];
+        //            Student student2 = studentList[i + 1];
+        //            int s1 = int.Parse(studentList[i].getNr().ToLower());
+        //            int s2 = int.Parse(studentList[i + 1].getNr().ToLower());
+
+        //            if (s1 > s2)
+        //            {
+        //                studentList[i] = student2;
+        //                studentList[i + 1] = student1;
+        //            }
+        //        }
+        //    }
+
+        //    label1.Text = string.Empty;
+        //    foreach (Student student in studentList)
+        //    {
+        //        label1.Text += student.ToString();
+        //        label1.Text += "\n";
+        //    }
+        //}
+
+        //private void naam_Click(object sender, EventArgs e)
+        //{
+        //    for (int j = 0; j < studentList.Count - 1; j++)
+        //    {
+        //        for (int i = 0; i < studentList.Count - 1; i++)
+        //        {
+        //            Student student1 = studentList[i];
+        //            Student student2 = studentList[i + 1];
+        //            string s1 = studentList[i].getName().ToUpper();
+        //            string s2 = studentList[i + 1].getName().ToUpper();
+        //            if (s1[0] > s2[0])
+        //            {
+        //                studentList[i] = student2;
+        //                studentList[i + 1] = student1;
+        //            }
+        //        }
+        //    }
+
+        //    label1.Text = string.Empty;
+        //    foreach (Student student in studentList)
+        //    {
+        //        label1.Text += student.ToString();
+        //        label1.Text += "\n";
+        //    }
+        //}
+
+        //private void leeftijd_Click(object sender, EventArgs e)
+        //{
+        //    for (int j = 0; j < studentList.Count - 1; j++)
+        //    {
+        //        for (int i = 0; i < studentList.Count - 1; i++)
+        //        {
+        //            Student student1 = studentList[i];
+        //            Student student2 = studentList[i + 1];
+        //            if (student1.getAge() > student2.getAge())
+        //            {
+        //                studentList[i] = student2;
+        //                studentList[i + 1] = student1;
+        //            }
+        //        }
+        //    }
+
+        //    label1.Text = string.Empty;
+        //    foreach (Student student in studentList)
+        //    {
+        //        label1.Text += student.ToString();
+        //        label1.Text += "\n";
+        //    }
+        //}
     }
 }
