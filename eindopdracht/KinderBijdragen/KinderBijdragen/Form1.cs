@@ -43,12 +43,12 @@ namespace KinderBijdragen
 
             //get and make Childern
             DataSet dsChild = Database.SelectDataFromDatabase("SELECT Name, BirthDate, Id, SchoolId FROM Child WHERE SchoolId = 1");
-            
+
             foreach (DataRow child in dsChild.Tables[0].Rows)
             {
                 Child curChild = new Child(child[0].ToString(), Convert.ToDateTime(child[1].ToString()), (int)child[2], (int)child[3]);
                 ParentContribution pc = new ParentContribution(curChild);
-                
+
                 // Add childeren and ParentContribution to school
                 school.AddChild(curChild);
                 school.AddPc(pc);
@@ -111,7 +111,8 @@ namespace KinderBijdragen
 
             string dateString = dateTimePicker1.Value.ToString("yyyy-MM-dd");
             string name = textBox1.Text;
-            if (!name.Equals(string.Empty)) {
+            if (!name.Equals(string.Empty))
+            {
                 cmd.Parameters.AddWithValue("@Name", name);
                 cmd.Parameters.AddWithValue("@BirthDate", dateString);
 
@@ -150,7 +151,7 @@ namespace KinderBijdragen
             AboutBox1 aboutBox = new AboutBox1();
             aboutBox.Show();
         }
-        private void openSchoolPane(object sender, EventArgs e) 
+        private void openSchoolPane(object sender, EventArgs e)
         {
             showApp();
             tabControl1.SelectedTab = tabControl1.TabPages["SchoolInfoPane"];
@@ -160,7 +161,7 @@ namespace KinderBijdragen
         {
             showApp();
             tabControl1.SelectedTab = tabControl1.TabPages["ChildernListPane"];
-        } 
+        }
         private void openAddChildPane(object sender, EventArgs e)
         {
             showApp();
@@ -259,5 +260,6 @@ namespace KinderBijdragen
         //        label1.Text += "\n";
         //    }
         //}
+
     }
 }
